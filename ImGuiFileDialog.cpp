@@ -52,6 +52,7 @@ SOFTWARE.
 
 #ifdef _MSC_VER
 
+
 #define IGFD_DEBUG_BREAK \
     if (IsDebuggerPresent()) __debugbreak()
 #else
@@ -111,6 +112,9 @@ SOFTWARE.
 #include <cstdlib>
 #include <algorithm>
 #include <iostream>
+
+#define ImGuiMod_Ctrl (ImGui::GetIO().KeyCtrl)
+#define ImGuiMod_Shift (ImGui::GetIO().KeyShift)
 
 ///////////////////////////////
 // STB IMAGE LIBS
